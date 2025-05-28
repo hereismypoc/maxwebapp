@@ -1,5 +1,8 @@
 <hr>
-
+<script>
+  window.location.replace(window.location.pathname);
+  sessionStorage.setItem("WebAppData", "auth_date=1748455833&hash=123&chat=%7B%22id%22%3A5050095%2C%22type%22%3A%22DIALOG%22%7D&start_param=deviceStorage&ip=85.143.144.114&user=%7B%22id%22%3A288783%2C%22first_name%22%3A%22AppSecBot%22%2C%22last_name%22%3A%22One%22%2C%22username%22%3A%22appsecbot1%22%2C%22language_code%22%3A%22ru%22%2C%22photo_url%22%3A%22https%3A%2F%2Fi.oneme.ru%2Fi%3Fr%3DBTGBPUwtwgYUeoFhO7rESmr8Jf0BuzbKjEGjCAGADCm6OKjruNq8FqMuaSjG378FCDo%22%7D&query_id=2a22ab4b-fa14-4772-b6fc-03a869115000");
+</script>
 <script src="/maxwebapp/max-web-app.js"></script>
 <!--
 <script>
@@ -22,8 +25,6 @@
 
 <script>
   window.onload = function() {
-    history.pushState("", document.title, window.location.pathname + window.location.search);
-    sessionStorage.setItem("WebAppData", "auth_date=1748455833&hash=123&chat=%7B%22id%22%3A5050095%2C%22type%22%3A%22DIALOG%22%7D&start_param=deviceStorage&ip=85.143.144.114&user=%7B%22id%22%3A288783%2C%22first_name%22%3A%22AppSecBot%22%2C%22last_name%22%3A%22One%22%2C%22username%22%3A%22appsecbot1%22%2C%22language_code%22%3A%22ru%22%2C%22photo_url%22%3A%22https%3A%2F%2Fi.oneme.ru%2Fi%3Fr%3DBTGBPUwtwgYUeoFhO7rESmr8Jf0BuzbKjEGjCAGADCm6OKjruNq8FqMuaSjG378FCDo%22%7D&query_id=2a22ab4b-fa14-4772-b6fc-03a869115000");
     MaxApp = window.WebApp;
     initdata = MaxApp.initData;
     document.getElementById("output").innerHTML = "<h2>initData:<br/>" + initdata + "</h2>";
