@@ -1,0 +1,16 @@
+<hr>
+<script src="/maxwebapp/max-web-app.js"></script>
+<script>
+  window.onload = function() {
+    initdata = window.WebApp.initData;
+    document.getElementById("output").innerHTML = "<h2>initData:<br/>" + initdata + "</h2>";
+    window.WebApp.DeviceStorage.getItem('test', (error, result) => {
+      key = JSON.parse(result);
+    })
+    document.getElementById("output2").innerHTML = "<h2>saved key:<br/>" + key + "</h2>";
+  }
+  
+</script>
+
+<p id="output" style="display:inline-block;"><h2>initData:<br/></h2></p>
+<p id="output2" style="display:inline-block;"><h2>saved key:<br/></h2></p>
