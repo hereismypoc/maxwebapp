@@ -29,7 +29,7 @@
     initdata = MaxApp.initData;
     document.getElementById("output").innerHTML = "<h2>initData:<br/>" + initdata + "</h2>";
 
-    window.WebApp.DeviceStorage.getItem('test').then(res => {
+    MaxApp.DeviceStorage.getItem('test').then(res => {
       key = res.test;
       document.getElementById("output2").innerHTML = "<h2>saved key:<br/>" + key + "</h2>";
     }
