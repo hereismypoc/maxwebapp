@@ -30,7 +30,7 @@
     document.getElementById("output").innerHTML = "<h2>initData:<br/>" + initdata + "</h2>";
 
     window.WebApp.DeviceStorage.getItem('test').then(res => {
-      key = res.test;
+      key = JSON.stringify(res);
       document.getElementById("output2").innerHTML = "<h2>saved key:<br/>" + key + "</h2>";
     }
     ).catch((err)=> {
